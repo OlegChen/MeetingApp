@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1842DBF32153C25C007D5537 /* MeetingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DBF22153C25C007D5537 /* MeetingVC.m */; };
+		1842DBF62153C27A007D5537 /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DBF52153C27A007D5537 /* ContactsVC.m */; };
+		1842DBF92153C291007D5537 /* RecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DBF82153C291007D5537 /* RecordVC.m */; };
+		1842DBFC2153C2A2007D5537 /* ScheduleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DBFB2153C2A2007D5537 /* ScheduleVC.m */; };
 		1862E54821412A1D00B727A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862E54721412A1D00B727A0 /* AppDelegate.m */; };
 		1862E54B21412A1D00B727A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862E54A21412A1D00B727A0 /* ViewController.m */; };
 		1862E54E21412A1D00B727A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1862E54C21412A1D00B727A0 /* Main.storyboard */; };
@@ -319,6 +323,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1842DBF12153C25C007D5537 /* MeetingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeetingVC.h; sourceTree = "<group>"; };
+		1842DBF22153C25C007D5537 /* MeetingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetingVC.m; sourceTree = "<group>"; };
+		1842DBF42153C27A007D5537 /* ContactsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
+		1842DBF52153C27A007D5537 /* ContactsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
+		1842DBF72153C291007D5537 /* RecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordVC.h; sourceTree = "<group>"; };
+		1842DBF82153C291007D5537 /* RecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordVC.m; sourceTree = "<group>"; };
+		1842DBFA2153C2A2007D5537 /* ScheduleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleVC.h; sourceTree = "<group>"; };
+		1842DBFB2153C2A2007D5537 /* ScheduleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVC.m; sourceTree = "<group>"; };
 		1862E54321412A1D00B727A0 /* MeetingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1862E54621412A1D00B727A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1862E54721412A1D00B727A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -887,6 +899,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1842DBEC2153BF82007D5537 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				1842DBF12153C25C007D5537 /* MeetingVC.h */,
+				1842DBF22153C25C007D5537 /* MeetingVC.m */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+		1842DBED2153C0F4007D5537 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				1842DBF42153C27A007D5537 /* ContactsVC.h */,
+				1842DBF52153C27A007D5537 /* ContactsVC.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		1842DBEE2153C1A8007D5537 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				1842DBF72153C291007D5537 /* RecordVC.h */,
+				1842DBF82153C291007D5537 /* RecordVC.m */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		1842DBEF2153C1B3007D5537 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1842DBFA2153C2A2007D5537 /* ScheduleVC.h */,
+				1842DBFB2153C2A2007D5537 /* ScheduleVC.m */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
 		1862E53A21412A1D00B727A0 = {
 			isa = PBXGroup;
 			children = (
@@ -946,6 +994,10 @@
 		1862E57821412CDC00B727A0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1842DBEF2153C1B3007D5537 /* Schedule */,
+				1842DBEE2153C1A8007D5537 /* Record */,
+				1842DBED2153C0F4007D5537 /* Contacts */,
+				1842DBEC2153BF82007D5537 /* Meeting */,
 				1862E57921412CDC00B727A0 /* Home */,
 				1862E59021412CDC00B727A0 /* Vendors */,
 				1862E6F921412CDC00B727A0 /* BaseVC */,
@@ -960,13 +1012,13 @@
 		1862E57921412CDC00B727A0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1862E58F21412CDC00B727A0 /* HomeVC.h */,
 				1862E57A21412CDC00B727A0 /* HomeVC.m */,
+				1862E58E21412CDC00B727A0 /* calendarClassTableVC.h */,
 				1862E57B21412CDC00B727A0 /* calendarClassTableVC.m */,
 				1862E57C21412CDC00B727A0 /* ChangeClass */,
 				1862E58321412CDC00B727A0 /* Model */,
 				1862E58421412CDC00B727A0 /* View */,
-				1862E58E21412CDC00B727A0 /* calendarClassTableVC.h */,
-				1862E58F21412CDC00B727A0 /* HomeVC.h */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2183,9 +2235,11 @@
 				1862E84E21412CDD00B727A0 /* MFMessageComposeViewController+BlocksKit.m in Sources */,
 				1862E81E21412CDD00B727A0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				1862E7D821412CDC00B727A0 /* MJRefreshConst.m in Sources */,
+				1842DBFC2153C2A2007D5537 /* ScheduleVC.m in Sources */,
 				1862E85821412CDD00B727A0 /* SDWebImageDownloader.m in Sources */,
 				1862E80721412CDC00B727A0 /* QBCheckmarkView.m in Sources */,
 				1862E7BE21412CDC00B727A0 /* calendarClassTableVC.m in Sources */,
+				1842DBF32153C25C007D5537 /* MeetingVC.m in Sources */,
 				1862E87021412CDD00B727A0 /* UIBadgeView.m in Sources */,
 				1862E7C621412CDC00B727A0 /* HomeCell.m in Sources */,
 				1862E7E521412CDC00B727A0 /* MJRefreshGifHeader.m in Sources */,
@@ -2206,6 +2260,7 @@
 				1862E7C121412CDC00B727A0 /* changeClassCell.m in Sources */,
 				1862E7D721412CDC00B727A0 /* UIScrollView+MJRefresh.m in Sources */,
 				1862E7FB21412CDC00B727A0 /* MJPhotoToolbar.m in Sources */,
+				1842DBF62153C27A007D5537 /* ContactsVC.m in Sources */,
 				1862E84721412CDD00B727A0 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				1862E7E721412CDC00B727A0 /* MJRefreshHeader.m in Sources */,
 				1862E87C21412CDD00B727A0 /* NSString+Valid.m in Sources */,
@@ -2258,6 +2313,7 @@
 				1862E7EA21412CDC00B727A0 /* MJRefreshComponent.m in Sources */,
 				1862E7DB21412CDC00B727A0 /* NSBundle+MJRefresh.m in Sources */,
 				1862E89321412CDD00B727A0 /* ImagePickerManger.m in Sources */,
+				1842DBF92153C291007D5537 /* RecordVC.m in Sources */,
 				1862E87421412CDD00B727A0 /* BasePullCollectionView.m in Sources */,
 				1862E7DA21412CDC00B727A0 /* UIScrollView+MJExtension.m in Sources */,
 				1862E85E21412CDD00B727A0 /* SDWebImageDownloaderOperation.m in Sources */,

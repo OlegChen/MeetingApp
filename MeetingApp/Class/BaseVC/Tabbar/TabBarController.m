@@ -16,6 +16,12 @@
 #import "HomeVC.h"
 #import "MeVC.h"
 
+#import "MeetingVC.h"
+#import "ContactsVC.h"
+#import "RecordVC.h"
+#import "ScheduleVC.h"
+
+
 @interface TabBarController ()<UITabBarControllerDelegate>
 
 
@@ -187,20 +193,42 @@
 {
 
     //
-    HomeVC *newVc = [[HomeVC alloc] init];
-    Navigation *nav = [[Navigation alloc] initWithRootViewController:newVc];
-    [self addChildViewController:nav];
-    
-
-    // 我
-//    MeVC *meVc = [[MeVC alloc] init];
-//    Navigation *nav4 = [[Navigation alloc] initWithRootViewController:meVc];
-//    [self addChildViewController:nav4];
+//    HomeVC *newVc = [[HomeVC alloc] init];
+//    Navigation *nav = [[Navigation alloc] initWithRootViewController:newVc];
+//    [self addChildViewController:nav];
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"MeVC_ID"];
-    Navigation *nav4 = [[Navigation alloc] initWithRootViewController:vc];
-    [self addChildViewController:nav4];
+    MeetingVC *vc = [storyBoard instantiateViewControllerWithIdentifier:@"MeetingVC"];
+    Navigation *nav = [[Navigation alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
+    
+    
+        RecordVC *record = [[RecordVC alloc] init];
+        Navigation *nav1 = [[Navigation alloc] initWithRootViewController:record];
+        [self addChildViewController:nav1];
+    
+    
+        ContactsVC *contacts = [[ContactsVC alloc] init];
+        Navigation *nav2 = [[Navigation alloc] initWithRootViewController:contacts];
+        [self addChildViewController:nav2];
+    
+    
+        ScheduleVC *schedule = [[ScheduleVC alloc] init];
+        Navigation *nav3 = [[Navigation alloc] initWithRootViewController:schedule];
+        [self addChildViewController:nav3];
+    
+    
+        MeVC *meVc = [[MeVC alloc] init];
+        Navigation *nav4 = [[Navigation alloc] initWithRootViewController:meVc];
+        [self addChildViewController:nav4];
+
+    // 我
+
+    
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"MeVC_ID"];
+//    Navigation *nav4 = [[Navigation alloc] initWithRootViewController:vc];
+//    [self addChildViewController:nav4];
 }
 
 // 设置tabBar上所有按钮内容
@@ -209,15 +237,30 @@
     
     // 0:nav
     UINavigationController *nav = self.childViewControllers[0];
-    nav.tabBarItem.title = @"课表";
+    nav.tabBarItem.title = @"会议";
     nav.tabBarItem.image = [UIImage imageOriginalWithName:@"日历2"];
     // 快速生成一个没有渲染图片
     nav.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"日历1"];
     
     
     // 4.我
-    UINavigationController *nav4 = self.childViewControllers[1];
-    nav4.tabBarItem.title = @"我的";
+    UINavigationController *nav1 = self.childViewControllers[1];
+    nav1.tabBarItem.title = @"通话";
+    nav1.tabBarItem.image = [UIImage imageOriginalWithName:@"我的2"];
+    nav1.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"我的1"];
+    
+    UINavigationController *nav2 = self.childViewControllers[2];
+    nav2.tabBarItem.title = @"联系人";
+    nav2.tabBarItem.image = [UIImage imageOriginalWithName:@"我的2"];
+    nav2.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"我的1"];
+    
+    UINavigationController *nav3 = self.childViewControllers[3];
+    nav3.tabBarItem.title = @"日程";
+    nav3.tabBarItem.image = [UIImage imageOriginalWithName:@"我的2"];
+    nav3.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"我的1"];
+    
+    UINavigationController *nav4 = self.childViewControllers[4];
+    nav4.tabBarItem.title = @"我";
     nav4.tabBarItem.image = [UIImage imageOriginalWithName:@"我的2"];
     nav4.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"我的1"];
 }

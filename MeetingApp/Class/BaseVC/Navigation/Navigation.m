@@ -41,10 +41,10 @@
     
 //    [navBar setBarTintColor:[UIColor myColorWithHexString:@"#f2f2f2"]];
 
-    navBar.tintColor = [UIColor myColorWithHexString:@"#333333"];
+    navBar.tintColor = [UIColor whiteColor];
     
     
-    [navBar setBackgroundImage:[UIImage imageWithColor:[UIColor myColorWithHexString:@"#ffffff"]] forBarMetrics:0];
+    [navBar setBackgroundImage:[UIImage imageWithColor:RGBCOLOR(78, 112, 174)] forBarMetrics:0];
     
     
     
